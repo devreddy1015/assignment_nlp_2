@@ -1,0 +1,13 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Dataset cache and model checkpoints (too large, and the assignment says not to submit them)
+data_cache/
+*.pt
+
+# Submission zips (rebuilt with make_submission.py)
+*.zip

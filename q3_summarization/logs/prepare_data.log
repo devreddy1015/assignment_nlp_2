@@ -1,0 +1,59 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/287113 [00:00<?, ? examples/s]Generating train split:   3%|▎         | 8000/287113 [00:00<00:05, 55553.24 examples/s]Generating train split:   8%|▊         | 23000/287113 [00:00<00:02, 99349.21 examples/s]Generating train split:  13%|█▎        | 37000/287113 [00:00<00:02, 113362.96 examples/s]Generating train split:  17%|█▋        | 50000/287113 [00:00<00:02, 115828.65 examples/s]Generating train split:  22%|██▏       | 63000/287113 [00:00<00:02, 110795.95 examples/s]Generating train split:  28%|██▊       | 81000/287113 [00:00<00:02, 79926.43 examples/s] Generating train split:  32%|███▏      | 93000/287113 [00:01<00:02, 87895.85 examples/s]Generating train split:  37%|███▋      | 105705/287113 [00:01<00:01, 95142.32 examples/s]Generating train split:  42%|████▏     | 119705/287113 [00:01<00:01, 101540.62 examples/s]Generating train split:  47%|████▋     | 134705/287113 [00:01<00:01, 111108.13 examples/s]Generating train split:  53%|█████▎    | 152705/287113 [00:01<00:01, 121979.50 examples/s]Generating train split:  58%|█████▊    | 167705/287113 [00:01<00:01, 82564.81 examples/s] Generating train split:  64%|██████▍   | 184705/287113 [00:01<00:01, 98345.41 examples/s]Generating train split:  70%|███████   | 202409/287113 [00:02<00:00, 111903.96 examples/s]Generating train split:  76%|███████▌  | 217409/287113 [00:02<00:00, 116069.76 examples/s]Generating train split:  83%|████████▎ | 238409/287113 [00:02<00:00, 123010.16 examples/s]Generating train split:  88%|████████▊ | 252409/287113 [00:02<00:00, 84608.18 examples/s] Generating train split:  93%|█████████▎| 266409/287113 [00:02<00:00, 92801.96 examples/s]Generating train split:  97%|█████████▋| 279409/287113 [00:02<00:00, 100042.25 examples/s]Generating train split: 100%|██████████| 287113/287113 [00:02<00:00, 101027.71 examples/s]
+Generating validation split:   0%|          | 0/13368 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 13368/13368 [00:00<00:00, 134052.47 examples/s]
+Generating test split:   0%|          | 0/11490 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 11490/11490 [00:00<00:00, 130185.75 examples/s]
+Tokenizing train (287,113 pairs)
+  train: 2,000/287,113  train: 4,000/287,113  train: 6,000/287,113  train: 8,000/287,113  train: 10,000/287,113  train: 12,000/287,113  train: 14,000/287,113  train: 16,000/287,113  train: 18,000/287,113  train: 20,000/287,113  train: 22,000/287,113  train: 24,000/287,113  train: 26,000/287,113  train: 28,000/287,113  train: 30,000/287,113  train: 32,000/287,113  train: 34,000/287,113  train: 36,000/287,113  train: 38,000/287,113  train: 40,000/287,113  train: 42,000/287,113  train: 44,000/287,113  train: 46,000/287,113  train: 48,000/287,113  train: 50,000/287,113  train: 52,000/287,113  train: 54,000/287,113  train: 56,000/287,113  train: 58,000/287,113  train: 60,000/287,113  train: 62,000/287,113  train: 64,000/287,113  train: 66,000/287,113  train: 68,000/287,113  train: 70,000/287,113  train: 72,000/287,113  train: 74,000/287,113  train: 76,000/287,113  train: 78,000/287,113  train: 80,000/287,113  train: 82,000/287,113  train: 84,000/287,113  train: 86,000/287,113  train: 88,000/287,113  train: 90,000/287,113  train: 92,000/287,113  train: 94,000/287,113  train: 96,000/287,113  train: 98,000/287,113  train: 100,000/287,113  train: 102,000/287,113  train: 104,000/287,113  train: 106,000/287,113  train: 108,000/287,113  train: 110,000/287,113  train: 112,000/287,113  train: 114,000/287,113  train: 116,000/287,113  train: 118,000/287,113  train: 120,000/287,113  train: 122,000/287,113  train: 124,000/287,113  train: 126,000/287,113  train: 128,000/287,113  train: 130,000/287,113  train: 132,000/287,113  train: 134,000/287,113  train: 136,000/287,113  train: 138,000/287,113  train: 140,000/287,113  train: 142,000/287,113  train: 144,000/287,113  train: 146,000/287,113  train: 148,000/287,113  train: 150,000/287,113  train: 152,000/287,113  train: 154,000/287,113  train: 156,000/287,113  train: 158,000/287,113  train: 160,000/287,113  train: 162,000/287,113  train: 164,000/287,113  train: 166,000/287,113  train: 168,000/287,113  train: 170,000/287,113  train: 172,000/287,113  train: 174,000/287,113  train: 176,000/287,113  train: 178,000/287,113  train: 180,000/287,113  train: 182,000/287,113  train: 184,000/287,113  train: 186,000/287,113  train: 188,000/287,113  train: 190,000/287,113  train: 192,000/287,113  train: 194,000/287,113  train: 196,000/287,113  train: 198,000/287,113  train: 200,000/287,113  train: 202,000/287,113  train: 204,000/287,113  train: 206,000/287,113  train: 208,000/287,113  train: 210,000/287,113  train: 212,000/287,113  train: 214,000/287,113  train: 216,000/287,113  train: 218,000/287,113  train: 220,000/287,113  train: 222,000/287,113  train: 224,000/287,113  train: 226,000/287,113  train: 228,000/287,113  train: 230,000/287,113  train: 232,000/287,113  train: 234,000/287,113  train: 236,000/287,113  train: 238,000/287,113  train: 240,000/287,113  train: 242,000/287,113  train: 244,000/287,113  train: 246,000/287,113  train: 248,000/287,113  train: 250,000/287,113  train: 252,000/287,113  train: 254,000/287,113  train: 256,000/287,113  train: 258,000/287,113  train: 260,000/287,113  train: 262,000/287,113  train: 264,000/287,113  train: 266,000/287,113  train: 268,000/287,113  train: 270,000/287,113  train: 272,000/287,113  train: 274,000/287,113  train: 276,000/287,113  train: 278,000/287,113  train: 280,000/287,113  train: 282,000/287,113  train: 284,000/287,113  train: 286,000/287,113  train: 287,113/287,113
+{
+  "examples": 287113,
+  "dropped_empty": 0,
+  "article_tokens": {
+    "median": 798.0,
+    "p90": 1479.0,
+    "max": 6321,
+    "pct_truncated": 79.83
+  },
+  "summary_tokens": {
+    "median": 61.0,
+    "p90": 97.0,
+    "max": 2300,
+    "pct_truncated": 2.7
+  }
+}
+Tokenizing validation (13,368 pairs)
+  validation: 2,000/13,368  validation: 4,000/13,368  validation: 6,000/13,368  validation: 8,000/13,368  validation: 10,000/13,368  validation: 12,000/13,368  validation: 13,368/13,368
+{
+  "examples": 13368,
+  "dropped_empty": 0,
+  "article_tokens": {
+    "median": 763.0,
+    "p90": 1474.300000000001,
+    "max": 2415,
+    "pct_truncated": 75.73
+  },
+  "summary_tokens": {
+    "median": 67.0,
+    "p90": 109.0,
+    "max": 1895,
+    "pct_truncated": 4.35
+  }
+}
+Tokenizing test (11,490 pairs)
+  test: 2,000/11,490  test: 4,000/11,490  test: 6,000/11,490  test: 8,000/11,490  test: 10,000/11,490  test: 11,490/11,490
+{
+  "examples": 11490,
+  "dropped_empty": 0,
+  "article_tokens": {
+    "median": 778.0,
+    "p90": 1502.0,
+    "max": 2965,
+    "pct_truncated": 76.56
+  },
+  "summary_tokens": {
+    "median": 64.0,
+    "p90": 102.0,
+    "max": 857,
+    "pct_truncated": 3.36
+  }
+}
+Saved to data_cache/

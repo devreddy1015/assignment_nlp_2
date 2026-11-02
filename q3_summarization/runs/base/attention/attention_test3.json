@@ -1,0 +1,10 @@
+{
+  "index": 3,
+  "window": [
+    10,
+    70
+  ],
+  "attention_mass_in_window": 0.2535204291343689,
+  "generated": "new : cdc says the cdc is \" not a \" miracle \"\nnew : the cdc says the cdc is \" not \" in the united states \"\nthe cdc says the cdc is \" not aware of the outbreak \"",
+  "reference": "17 Americans were exposed to the Ebola virus while in Sierra Leone in March .\nAnother person was diagnosed with the disease and taken to hospital in Maryland .\nNational Institutes of Health says the patient is in fair condition after weeks of treatment ."
+}

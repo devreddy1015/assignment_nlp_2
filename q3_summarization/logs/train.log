@@ -1,0 +1,332 @@
+Device: cuda | parameters: 15,186,688 | train: 287,113 | val: 13,368
+Steps per epoch: 8,972
+epoch 1 | step 100 | loss 10.0019 (interval mean 10.0019) | lr 2.47e-05 | 12,694 target tok/s | 0.3 min
+epoch 1 | step 200 | loss 8.7472 (interval mean 9.3793) | lr 4.94e-05 | 12,736 target tok/s | 0.5 min
+epoch 1 | step 300 | loss 7.6778 (interval mean 8.8110) | lr 7.41e-05 | 12,976 target tok/s | 0.8 min
+epoch 1 | step 400 | loss 7.0894 (interval mean 8.3820) | lr 9.88e-05 | 12,827 target tok/s | 1.1 min
+epoch 1 | step 500 | loss 6.9195 (interval mean 8.0906) | lr 1.24e-04 | 12,893 target tok/s | 1.4 min
+epoch 1 | step 600 | loss 6.8142 (interval mean 7.8769) | lr 1.48e-04 | 12,988 target tok/s | 1.6 min
+epoch 1 | step 700 | loss 6.7429 (interval mean 7.7156) | lr 1.73e-04 | 12,924 target tok/s | 1.9 min
+epoch 1 | step 800 | loss 6.6510 (interval mean 7.5821) | lr 1.98e-04 | 13,072 target tok/s | 2.2 min
+epoch 1 | step 900 | loss 6.5628 (interval mean 7.4684) | lr 2.22e-04 | 13,118 target tok/s | 2.4 min
+epoch 1 | step 1,000 | loss 6.4989 (interval mean 7.3705) | lr 2.47e-04 | 13,156 target tok/s | 2.7 min
+epoch 1 | step 1,100 | loss 6.4128 (interval mean 7.2831) | lr 2.72e-04 | 13,065 target tok/s | 3.0 min
+epoch 1 | step 1,200 | loss 6.3033 (interval mean 7.2018) | lr 2.96e-04 | 12,899 target tok/s | 3.2 min
+epoch 1 | step 1,300 | loss 6.2385 (interval mean 7.1281) | lr 3.21e-04 | 12,962 target tok/s | 3.5 min
+epoch 1 | step 1,400 | loss 6.1546 (interval mean 7.0596) | lr 3.46e-04 | 12,857 target tok/s | 3.8 min
+epoch 1 | step 1,500 | loss 6.0897 (interval mean 6.9941) | lr 3.71e-04 | 13,204 target tok/s | 4.0 min
+epoch 1 | step 1,600 | loss 5.9938 (interval mean 6.9314) | lr 3.95e-04 | 13,103 target tok/s | 4.3 min
+epoch 1 | step 1,700 | loss 5.9328 (interval mean 6.8728) | lr 4.20e-04 | 12,952 target tok/s | 4.6 min
+epoch 1 | step 1,800 | loss 5.8857 (interval mean 6.8175) | lr 4.45e-04 | 13,080 target tok/s | 4.8 min
+epoch 1 | step 1,900 | loss 5.8286 (interval mean 6.7658) | lr 4.69e-04 | 12,987 target tok/s | 5.1 min
+epoch 1 | step 2,000 | loss 5.7686 (interval mean 6.7156) | lr 4.94e-04 | 12,988 target tok/s | 5.4 min
+epoch 1 | step 2,100 | loss 5.7356 (interval mean 6.6690) | lr 5.19e-04 | 13,082 target tok/s | 5.6 min
+epoch 1 | step 2,200 | loss 5.7016 (interval mean 6.6252) | lr 5.44e-04 | 12,925 target tok/s | 5.9 min
+epoch 1 | step 2,300 | loss 5.6470 (interval mean 6.5824) | lr 5.68e-04 | 13,109 target tok/s | 6.2 min
+epoch 1 | step 2,400 | loss 5.6097 (interval mean 6.5415) | lr 5.93e-04 | 12,894 target tok/s | 6.5 min
+epoch 1 | step 2,500 | loss 5.6017 (interval mean 6.5041) | lr 6.18e-04 | 12,812 target tok/s | 6.7 min
+epoch 1 | step 2,600 | loss 5.5501 (interval mean 6.4672) | lr 6.42e-04 | 13,058 target tok/s | 7.0 min
+epoch 1 | step 2,700 | loss 5.5333 (interval mean 6.4325) | lr 6.67e-04 | 13,069 target tok/s | 7.3 min
+epoch 1 | step 2,800 | loss 5.5038 (interval mean 6.3995) | lr 6.92e-04 | 13,046 target tok/s | 7.5 min
+epoch 1 | step 2,900 | loss 5.4657 (interval mean 6.3673) | lr 7.16e-04 | 12,937 target tok/s | 7.8 min
+epoch 1 | step 3,000 | loss 5.4350 (interval mean 6.3362) | lr 7.41e-04 | 12,921 target tok/s | 8.1 min
+epoch 1 | step 3,100 | loss 5.4278 (interval mean 6.3069) | lr 7.66e-04 | 12,965 target tok/s | 8.3 min
+epoch 1 | step 3,200 | loss 5.3772 (interval mean 6.2780) | lr 7.91e-04 | 13,022 target tok/s | 8.6 min
+epoch 1 | step 3,300 | loss 5.3763 (interval mean 6.2506) | lr 8.15e-04 | 13,102 target tok/s | 8.9 min
+epoch 1 | step 3,400 | loss 5.3279 (interval mean 6.2238) | lr 8.40e-04 | 12,903 target tok/s | 9.1 min
+epoch 1 | step 3,500 | loss 5.3288 (interval mean 6.1980) | lr 8.65e-04 | 13,132 target tok/s | 9.4 min
+epoch 1 | step 3,600 | loss 5.2902 (interval mean 6.1730) | lr 8.89e-04 | 12,973 target tok/s | 9.7 min
+epoch 1 | step 3,700 | loss 5.2750 (interval mean 6.1489) | lr 9.14e-04 | 12,972 target tok/s | 9.9 min
+epoch 1 | step 3,800 | loss 5.2608 (interval mean 6.1256) | lr 9.39e-04 | 13,005 target tok/s | 10.2 min
+epoch 1 | step 3,900 | loss 5.2191 (interval mean 6.1021) | lr 9.64e-04 | 13,127 target tok/s | 10.5 min
+epoch 1 | step 4,000 | loss 5.2070 (interval mean 6.0798) | lr 9.88e-04 | 13,046 target tok/s | 10.8 min
+epoch 1 | step 4,100 | loss 5.1825 (interval mean 6.0582) | lr 9.76e-04 | 12,862 target tok/s | 11.0 min
+epoch 1 | step 4,200 | loss 5.1710 (interval mean 6.0370) | lr 9.64e-04 | 13,101 target tok/s | 11.3 min
+epoch 1 | step 4,300 | loss 5.1593 (interval mean 6.0166) | lr 9.53e-04 | 13,041 target tok/s | 11.6 min
+epoch 1 | step 4,400 | loss 5.1257 (interval mean 5.9966) | lr 9.42e-04 | 12,861 target tok/s | 11.8 min
+epoch 1 | step 4,500 | loss 5.1155 (interval mean 5.9772) | lr 9.32e-04 | 12,924 target tok/s | 12.1 min
+epoch 1 | step 4,600 | loss 5.0941 (interval mean 5.9579) | lr 9.22e-04 | 13,121 target tok/s | 12.4 min
+epoch 1 | step 4,700 | loss 5.0839 (interval mean 5.9396) | lr 9.12e-04 | 12,699 target tok/s | 12.6 min
+epoch 1 | step 4,800 | loss 5.0456 (interval mean 5.9210) | lr 9.02e-04 | 12,584 target tok/s | 12.9 min
+epoch 1 | step 4,900 | loss 5.0509 (interval mean 5.9034) | lr 8.93e-04 | 12,850 target tok/s | 13.2 min
+epoch 1 | step 5,000 | loss 5.0374 (interval mean 5.8862) | lr 8.84e-04 | 12,583 target tok/s | 13.4 min
+epoch 1 | step 5,100 | loss 5.0265 (interval mean 5.8695) | lr 8.75e-04 | 12,810 target tok/s | 13.7 min
+epoch 1 | step 5,200 | loss 4.9874 (interval mean 5.8526) | lr 8.67e-04 | 12,876 target tok/s | 14.0 min
+epoch 1 | step 5,300 | loss 4.9683 (interval mean 5.8359) | lr 8.59e-04 | 13,030 target tok/s | 14.3 min
+epoch 1 | step 5,400 | loss 4.9575 (interval mean 5.8196) | lr 8.51e-04 | 13,071 target tok/s | 14.5 min
+epoch 1 | step 5,500 | loss 4.9391 (interval mean 5.8035) | lr 8.43e-04 | 12,984 target tok/s | 14.8 min
+epoch 1 | step 5,600 | loss 4.9428 (interval mean 5.7883) | lr 8.35e-04 | 12,714 target tok/s | 15.1 min
+epoch 1 | step 5,700 | loss 4.9368 (interval mean 5.7734) | lr 8.28e-04 | 13,031 target tok/s | 15.3 min
+epoch 1 | step 5,800 | loss 4.9217 (interval mean 5.7587) | lr 8.21e-04 | 12,857 target tok/s | 15.6 min
+epoch 1 | step 5,900 | loss 4.9182 (interval mean 5.7443) | lr 8.14e-04 | 12,974 target tok/s | 15.9 min
+epoch 1 | step 6,000 | loss 4.8956 (interval mean 5.7301) | lr 8.07e-04 | 12,973 target tok/s | 16.1 min
+epoch 1 | step 6,100 | loss 4.8977 (interval mean 5.7165) | lr 8.00e-04 | 12,983 target tok/s | 16.4 min
+epoch 1 | step 6,200 | loss 4.8817 (interval mean 5.7031) | lr 7.94e-04 | 12,948 target tok/s | 16.7 min
+epoch 1 | step 6,300 | loss 4.8853 (interval mean 5.6901) | lr 7.87e-04 | 12,917 target tok/s | 16.9 min
+epoch 1 | step 6,400 | loss 4.8438 (interval mean 5.6771) | lr 7.81e-04 | 12,818 target tok/s | 17.2 min
+epoch 1 | step 6,500 | loss 4.8642 (interval mean 5.6647) | lr 7.75e-04 | 12,863 target tok/s | 17.5 min
+epoch 1 | step 6,600 | loss 4.8312 (interval mean 5.6520) | lr 7.69e-04 | 13,062 target tok/s | 17.8 min
+epoch 1 | step 6,700 | loss 4.8271 (interval mean 5.6398) | lr 7.64e-04 | 12,923 target tok/s | 18.0 min
+epoch 1 | step 6,800 | loss 4.8373 (interval mean 5.6280) | lr 7.58e-04 | 12,870 target tok/s | 18.3 min
+epoch 1 | step 6,900 | loss 4.8302 (interval mean 5.6165) | lr 7.52e-04 | 12,742 target tok/s | 18.6 min
+epoch 1 | step 7,000 | loss 4.7962 (interval mean 5.6047) | lr 7.47e-04 | 12,853 target tok/s | 18.8 min
+epoch 1 | step 7,100 | loss 4.8154 (interval mean 5.5937) | lr 7.42e-04 | 12,915 target tok/s | 19.1 min
+epoch 1 | step 7,200 | loss 4.7734 (interval mean 5.5824) | lr 7.37e-04 | 12,909 target tok/s | 19.4 min
+epoch 1 | step 7,300 | loss 4.7962 (interval mean 5.5715) | lr 7.32e-04 | 13,047 target tok/s | 19.6 min
+epoch 1 | step 7,400 | loss 4.7589 (interval mean 5.5605) | lr 7.27e-04 | 13,102 target tok/s | 19.9 min
+epoch 1 | step 7,500 | loss 4.7662 (interval mean 5.5499) | lr 7.22e-04 | 11,680 target tok/s | 20.2 min
+epoch 1 | step 7,600 | loss 4.7701 (interval mean 5.5396) | lr 7.17e-04 | 12,001 target tok/s | 20.5 min
+epoch 1 | step 7,700 | loss 4.7576 (interval mean 5.5294) | lr 7.12e-04 | 11,980 target tok/s | 20.8 min
+epoch 1 | step 7,800 | loss 4.7629 (interval mean 5.5195) | lr 7.08e-04 | 12,032 target tok/s | 21.1 min
+epoch 1 | step 7,900 | loss 4.7587 (interval mean 5.5099) | lr 7.03e-04 | 12,041 target tok/s | 21.4 min
+epoch 1 | step 8,000 | loss 4.7302 (interval mean 5.5002) | lr 6.99e-04 | 12,004 target tok/s | 21.7 min
+epoch 1 | step 8,100 | loss 4.7176 (interval mean 5.4904) | lr 6.94e-04 | 12,047 target tok/s | 21.9 min
+epoch 1 | step 8,200 | loss 4.7247 (interval mean 5.4811) | lr 6.90e-04 | 11,755 target tok/s | 22.2 min
+epoch 1 | step 8,300 | loss 4.7114 (interval mean 5.4719) | lr 6.86e-04 | 11,615 target tok/s | 22.5 min
+epoch 1 | step 8,400 | loss 4.7246 (interval mean 5.4629) | lr 6.82e-04 | 11,724 target tok/s | 22.8 min
+epoch 1 | step 8,500 | loss 4.7204 (interval mean 5.4542) | lr 6.78e-04 | 11,895 target tok/s | 23.1 min
+epoch 1 | step 8,600 | loss 4.7261 (interval mean 5.4458) | lr 6.74e-04 | 11,989 target tok/s | 23.4 min
+epoch 1 | step 8,700 | loss 4.7047 (interval mean 5.4373) | lr 6.70e-04 | 11,911 target tok/s | 23.7 min
+epoch 1 | step 8,800 | loss 4.7327 (interval mean 5.4292) | lr 6.66e-04 | 12,074 target tok/s | 24.0 min
+epoch 1 | step 8,900 | loss 4.7434 (interval mean 5.4215) | lr 6.62e-04 | 12,011 target tok/s | 24.3 min
+[W1102 21:44:39.641974195 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 601882624 bytes (free: 412352512, total: 8263368704).
+[W1102 21:44:41.564255337 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1000341504 bytes (free: 385089536, total: 8263368704).
+[eval] step 8,972 | train 5.4158 | val 4.5655 (ppl 96.1) | saved best (0/3)
+epoch 2 | step 9,000 | loss 4.6549 (interval mean 4.6549) | lr 6.59e-04 | 11,816 target tok/s | 25.0 min
+epoch 2 | step 9,100 | loss 4.6696 (interval mean 4.6663) | lr 6.55e-04 | 11,874 target tok/s | 25.3 min
+epoch 2 | step 9,200 | loss 4.7047 (interval mean 4.6833) | lr 6.52e-04 | 12,015 target tok/s | 25.6 min
+epoch 2 | step 9,300 | loss 4.6799 (interval mean 4.6822) | lr 6.48e-04 | 11,993 target tok/s | 25.9 min
+epoch 2 | step 9,400 | loss 4.6754 (interval mean 4.6807) | lr 6.45e-04 | 12,028 target tok/s | 26.2 min
+epoch 2 | step 9,500 | loss 4.6884 (interval mean 4.6821) | lr 6.41e-04 | 11,985 target tok/s | 26.5 min
+epoch 2 | step 9,600 | loss 4.7007 (interval mean 4.6851) | lr 6.38e-04 | 11,994 target tok/s | 26.8 min
+epoch 2 | step 9,700 | loss 4.7201 (interval mean 4.6899) | lr 6.35e-04 | 11,950 target tok/s | 27.0 min
+epoch 2 | step 9,800 | loss 4.6865 (interval mean 4.6895) | lr 6.31e-04 | 12,052 target tok/s | 27.3 min
+epoch 2 | step 9,900 | loss 4.7224 (interval mean 4.6931) | lr 6.28e-04 | 11,796 target tok/s | 27.6 min
+epoch 2 | step 10,000 | loss 4.7042 (interval mean 4.6941) | lr 6.25e-04 | 11,838 target tok/s | 27.9 min
+epoch 2 | step 10,100 | loss 4.6984 (interval mean 4.6945) | lr 6.22e-04 | 11,810 target tok/s | 28.2 min
+epoch 2 | step 10,200 | loss 4.7263 (interval mean 4.6971) | lr 6.19e-04 | 11,796 target tok/s | 28.5 min
+epoch 2 | step 10,300 | loss 4.7035 (interval mean 4.6976) | lr 6.16e-04 | 11,905 target tok/s | 28.8 min
+epoch 2 | step 10,400 | loss 4.6659 (interval mean 4.6954) | lr 6.13e-04 | 12,076 target tok/s | 29.1 min
+epoch 2 | step 10,500 | loss 4.6692 (interval mean 4.6936) | lr 6.10e-04 | 12,031 target tok/s | 29.4 min
+epoch 2 | step 10,600 | loss 4.6871 (interval mean 4.6932) | lr 6.07e-04 | 11,979 target tok/s | 29.7 min
+epoch 2 | step 10,700 | loss 4.6771 (interval mean 4.6923) | lr 6.04e-04 | 12,057 target tok/s | 30.0 min
+epoch 2 | step 10,800 | loss 4.6821 (interval mean 4.6917) | lr 6.01e-04 | 12,129 target tok/s | 30.3 min
+epoch 2 | step 10,900 | loss 4.6435 (interval mean 4.6892) | lr 5.99e-04 | 12,007 target tok/s | 30.5 min
+epoch 2 | step 11,000 | loss 4.6550 (interval mean 4.6875) | lr 5.96e-04 | 12,215 target tok/s | 30.8 min
+epoch 2 | step 11,100 | loss 4.6519 (interval mean 4.6858) | lr 5.93e-04 | 12,026 target tok/s | 31.1 min
+epoch 2 | step 11,200 | loss 4.6566 (interval mean 4.6845) | lr 5.91e-04 | 12,042 target tok/s | 31.4 min
+epoch 2 | step 11,300 | loss 4.6490 (interval mean 4.6830) | lr 5.88e-04 | 12,113 target tok/s | 31.7 min
+epoch 2 | step 11,400 | loss 4.6474 (interval mean 4.6815) | lr 5.85e-04 | 12,043 target tok/s | 32.0 min
+epoch 2 | step 11,500 | loss 4.6383 (interval mean 4.6798) | lr 5.83e-04 | 12,012 target tok/s | 32.3 min
+epoch 2 | step 11,600 | loss 4.6480 (interval mean 4.6786) | lr 5.80e-04 | 11,971 target tok/s | 32.6 min
+epoch 2 | step 11,700 | loss 4.6616 (interval mean 4.6780) | lr 5.78e-04 | 11,974 target tok/s | 32.9 min
+epoch 2 | step 11,800 | loss 4.6334 (interval mean 4.6764) | lr 5.75e-04 | 11,936 target tok/s | 33.2 min
+epoch 2 | step 11,900 | loss 4.6160 (interval mean 4.6744) | lr 5.73e-04 | 12,095 target tok/s | 33.4 min
+epoch 2 | step 12,000 | loss 4.6136 (interval mean 4.6724) | lr 5.71e-04 | 12,025 target tok/s | 33.7 min
+epoch 2 | step 12,100 | loss 4.6218 (interval mean 4.6707) | lr 5.68e-04 | 11,937 target tok/s | 34.0 min
+epoch 2 | step 12,200 | loss 4.6603 (interval mean 4.6704) | lr 5.66e-04 | 12,038 target tok/s | 34.3 min
+epoch 2 | step 12,300 | loss 4.6340 (interval mean 4.6693) | lr 5.64e-04 | 11,970 target tok/s | 34.6 min
+epoch 2 | step 12,400 | loss 4.6767 (interval mean 4.6695) | lr 5.61e-04 | 11,909 target tok/s | 34.9 min
+epoch 2 | step 12,500 | loss 4.6759 (interval mean 4.6697) | lr 5.59e-04 | 12,052 target tok/s | 35.2 min
+epoch 2 | step 12,600 | loss 4.6442 (interval mean 4.6690) | lr 5.57e-04 | 12,061 target tok/s | 35.5 min
+epoch 2 | step 12,700 | loss 4.6481 (interval mean 4.6684) | lr 5.55e-04 | 12,037 target tok/s | 35.8 min
+epoch 2 | step 12,800 | loss 4.6464 (interval mean 4.6679) | lr 5.52e-04 | 12,082 target tok/s | 36.1 min
+epoch 2 | step 12,900 | loss 4.6652 (interval mean 4.6678) | lr 5.50e-04 | 12,111 target tok/s | 36.3 min
+epoch 2 | step 13,000 | loss 4.6491 (interval mean 4.6673) | lr 5.48e-04 | 12,094 target tok/s | 36.6 min
+epoch 2 | step 13,100 | loss 4.6660 (interval mean 4.6673) | lr 5.46e-04 | 11,927 target tok/s | 36.9 min
+epoch 2 | step 13,200 | loss 4.6595 (interval mean 4.6671) | lr 5.44e-04 | 11,947 target tok/s | 37.2 min
+epoch 2 | step 13,300 | loss 4.6510 (interval mean 4.6667) | lr 5.42e-04 | 11,901 target tok/s | 37.5 min
+epoch 2 | step 13,400 | loss 4.6795 (interval mean 4.6670) | lr 5.40e-04 | 12,114 target tok/s | 37.8 min
+epoch 2 | step 13,500 | loss 4.6787 (interval mean 4.6673) | lr 5.38e-04 | 11,986 target tok/s | 38.1 min
+epoch 2 | step 13,600 | loss 4.6323 (interval mean 4.6665) | lr 5.36e-04 | 12,030 target tok/s | 38.4 min
+epoch 2 | step 13,700 | loss 4.6171 (interval mean 4.6655) | lr 5.34e-04 | 12,128 target tok/s | 38.7 min
+epoch 2 | step 13,800 | loss 4.6423 (interval mean 4.6650) | lr 5.32e-04 | 12,011 target tok/s | 39.0 min
+epoch 2 | step 13,900 | loss 4.6158 (interval mean 4.6640) | lr 5.30e-04 | 12,038 target tok/s | 39.2 min
+epoch 2 | step 14,000 | loss 4.6090 (interval mean 4.6629) | lr 5.28e-04 | 12,088 target tok/s | 39.5 min
+epoch 2 | step 14,100 | loss 4.6325 (interval mean 4.6623) | lr 5.26e-04 | 12,171 target tok/s | 39.8 min
+epoch 2 | step 14,200 | loss 4.6094 (interval mean 4.6613) | lr 5.24e-04 | 12,024 target tok/s | 40.1 min
+epoch 2 | step 14,300 | loss 4.6428 (interval mean 4.6610) | lr 5.23e-04 | 12,032 target tok/s | 40.4 min
+epoch 2 | step 14,400 | loss 4.6258 (interval mean 4.6603) | lr 5.21e-04 | 11,926 target tok/s | 40.7 min
+epoch 2 | step 14,500 | loss 4.5855 (interval mean 4.6590) | lr 5.19e-04 | 12,110 target tok/s | 41.0 min
+epoch 2 | step 14,600 | loss 4.6220 (interval mean 4.6583) | lr 5.17e-04 | 11,970 target tok/s | 41.3 min
+epoch 2 | step 14,700 | loss 4.6492 (interval mean 4.6582) | lr 5.15e-04 | 11,994 target tok/s | 41.6 min
+epoch 2 | step 14,800 | loss 4.6300 (interval mean 4.6577) | lr 5.14e-04 | 12,108 target tok/s | 41.8 min
+epoch 2 | step 14,900 | loss 4.6563 (interval mean 4.6577) | lr 5.12e-04 | 12,094 target tok/s | 42.1 min
+epoch 2 | step 15,000 | loss 4.6563 (interval mean 4.6576) | lr 5.10e-04 | 12,138 target tok/s | 42.4 min
+epoch 2 | step 15,100 | loss 4.6217 (interval mean 4.6570) | lr 5.09e-04 | 12,224 target tok/s | 42.7 min
+epoch 2 | step 15,200 | loss 4.6406 (interval mean 4.6568) | lr 5.07e-04 | 11,951 target tok/s | 43.0 min
+epoch 2 | step 15,300 | loss 4.6567 (interval mean 4.6568) | lr 5.05e-04 | 12,093 target tok/s | 43.3 min
+epoch 2 | step 15,400 | loss 4.6352 (interval mean 4.6564) | lr 5.04e-04 | 12,076 target tok/s | 43.6 min
+epoch 2 | step 15,500 | loss 4.6380 (interval mean 4.6562) | lr 5.02e-04 | 12,108 target tok/s | 43.9 min
+epoch 2 | step 15,600 | loss 4.6416 (interval mean 4.6559) | lr 5.00e-04 | 12,130 target tok/s | 44.2 min
+epoch 2 | step 15,700 | loss 4.6366 (interval mean 4.6556) | lr 4.99e-04 | 12,117 target tok/s | 44.4 min
+epoch 2 | step 15,800 | loss 4.6522 (interval mean 4.6556) | lr 4.97e-04 | 12,091 target tok/s | 44.7 min
+epoch 2 | step 15,900 | loss 4.6486 (interval mean 4.6555) | lr 4.96e-04 | 12,043 target tok/s | 45.0 min
+epoch 2 | step 16,000 | loss 4.6134 (interval mean 4.6549) | lr 4.94e-04 | 12,061 target tok/s | 45.3 min
+epoch 2 | step 16,100 | loss 4.6055 (interval mean 4.6542) | lr 4.93e-04 | 12,052 target tok/s | 45.6 min
+epoch 2 | step 16,200 | loss 4.6062 (interval mean 4.6535) | lr 4.91e-04 | 12,087 target tok/s | 45.9 min
+epoch 2 | step 16,300 | loss 4.6564 (interval mean 4.6536) | lr 4.90e-04 | 11,961 target tok/s | 46.2 min
+epoch 2 | step 16,400 | loss 4.6243 (interval mean 4.6532) | lr 4.88e-04 | 12,268 target tok/s | 46.5 min
+epoch 2 | step 16,500 | loss 4.6467 (interval mean 4.6531) | lr 4.87e-04 | 12,075 target tok/s | 46.8 min
+epoch 2 | step 16,600 | loss 4.6193 (interval mean 4.6527) | lr 4.85e-04 | 11,977 target tok/s | 47.0 min
+epoch 2 | step 16,700 | loss 4.6602 (interval mean 4.6528) | lr 4.84e-04 | 12,089 target tok/s | 47.3 min
+epoch 2 | step 16,800 | loss 4.6226 (interval mean 4.6524) | lr 4.82e-04 | 12,094 target tok/s | 47.6 min
+epoch 2 | step 16,900 | loss 4.6207 (interval mean 4.6520) | lr 4.81e-04 | 12,018 target tok/s | 47.9 min
+epoch 2 | step 17,000 | loss 4.6417 (interval mean 4.6518) | lr 4.79e-04 | 11,967 target tok/s | 48.2 min
+epoch 2 | step 17,100 | loss 4.6182 (interval mean 4.6514) | lr 4.78e-04 | 12,091 target tok/s | 48.5 min
+epoch 2 | step 17,200 | loss 4.6327 (interval mean 4.6512) | lr 4.77e-04 | 12,071 target tok/s | 48.8 min
+epoch 2 | step 17,300 | loss 4.6183 (interval mean 4.6508) | lr 4.75e-04 | 12,022 target tok/s | 49.1 min
+epoch 2 | step 17,400 | loss 4.6357 (interval mean 4.6506) | lr 4.74e-04 | 12,006 target tok/s | 49.3 min
+epoch 2 | step 17,500 | loss 4.6240 (interval mean 4.6503) | lr 4.72e-04 | 12,098 target tok/s | 49.6 min
+epoch 2 | step 17,600 | loss 4.6111 (interval mean 4.6499) | lr 4.71e-04 | 12,007 target tok/s | 49.9 min
+epoch 2 | step 17,700 | loss 4.6838 (interval mean 4.6503) | lr 4.70e-04 | 12,047 target tok/s | 50.2 min
+epoch 2 | step 17,800 | loss 4.6317 (interval mean 4.6500) | lr 4.68e-04 | 12,095 target tok/s | 50.5 min
+epoch 2 | step 17,900 | loss 4.6310 (interval mean 4.6498) | lr 4.67e-04 | 12,228 target tok/s | 50.8 min
+[eval] step 17,944 | train 4.6497 | val 4.5095 (ppl 90.9) | saved best (0/3)
+epoch 3 | step 18,000 | loss 4.5877 (interval mean 4.5877) | lr 4.66e-04 | 12,011 target tok/s | 51.5 min
+epoch 3 | step 18,100 | loss 4.5622 (interval mean 4.5714) | lr 4.65e-04 | 12,061 target tok/s | 51.8 min
+epoch 3 | step 18,200 | loss 4.5610 (interval mean 4.5673) | lr 4.63e-04 | 12,160 target tok/s | 52.1 min
+epoch 3 | step 18,300 | loss 4.5355 (interval mean 4.5584) | lr 4.62e-04 | 12,043 target tok/s | 52.4 min
+epoch 3 | step 18,400 | loss 4.5592 (interval mean 4.5586) | lr 4.61e-04 | 12,091 target tok/s | 52.6 min
+epoch 3 | step 18,500 | loss 4.5832 (interval mean 4.5630) | lr 4.60e-04 | 12,016 target tok/s | 52.9 min
+epoch 3 | step 18,600 | loss 4.5606 (interval mean 4.5626) | lr 4.58e-04 | 12,134 target tok/s | 53.2 min
+epoch 3 | step 18,700 | loss 4.5673 (interval mean 4.5632) | lr 4.57e-04 | 11,996 target tok/s | 53.5 min
+epoch 3 | step 18,800 | loss 4.5488 (interval mean 4.5615) | lr 4.56e-04 | 12,091 target tok/s | 53.8 min
+epoch 3 | step 18,900 | loss 4.5554 (interval mean 4.5609) | lr 4.55e-04 | 12,180 target tok/s | 54.1 min
+epoch 3 | step 19,000 | loss 4.5597 (interval mean 4.5608) | lr 4.53e-04 | 11,903 target tok/s | 54.4 min
+epoch 3 | step 19,100 | loss 4.5455 (interval mean 4.5595) | lr 4.52e-04 | 12,046 target tok/s | 54.7 min
+epoch 3 | step 19,200 | loss 4.5882 (interval mean 4.5618) | lr 4.51e-04 | 12,148 target tok/s | 55.0 min
+epoch 3 | step 19,300 | loss 4.5867 (interval mean 4.5636) | lr 4.50e-04 | 12,114 target tok/s | 55.2 min
+epoch 3 | step 19,400 | loss 4.5887 (interval mean 4.5653) | lr 4.49e-04 | 11,984 target tok/s | 55.5 min
+epoch 3 | step 19,500 | loss 4.5846 (interval mean 4.5666) | lr 4.48e-04 | 12,137 target tok/s | 55.8 min
+epoch 3 | step 19,600 | loss 4.5823 (interval mean 4.5675) | lr 4.46e-04 | 12,017 target tok/s | 56.1 min
+epoch 3 | step 19,700 | loss 4.5930 (interval mean 4.5690) | lr 4.45e-04 | 12,124 target tok/s | 56.4 min
+epoch 3 | step 19,800 | loss 4.6569 (interval mean 4.5737) | lr 4.44e-04 | 12,024 target tok/s | 56.7 min
+epoch 3 | step 19,900 | loss 4.6682 (interval mean 4.5786) | lr 4.43e-04 | 12,205 target tok/s | 57.0 min
+epoch 3 | step 20,000 | loss 4.6796 (interval mean 4.5835) | lr 4.42e-04 | 12,208 target tok/s | 57.3 min
+epoch 3 | step 20,100 | loss 4.6247 (interval mean 4.5854) | lr 4.41e-04 | 12,086 target tok/s | 57.5 min
+epoch 3 | step 20,200 | loss 4.6100 (interval mean 4.5865) | lr 4.40e-04 | 12,133 target tok/s | 57.8 min
+epoch 3 | step 20,300 | loss 4.6551 (interval mean 4.5894) | lr 4.39e-04 | 12,023 target tok/s | 58.1 min
+epoch 3 | step 20,400 | loss 4.6198 (interval mean 4.5907) | lr 4.38e-04 | 12,319 target tok/s | 58.4 min
+epoch 3 | step 20,500 | loss 4.6161 (interval mean 4.5917) | lr 4.37e-04 | 12,097 target tok/s | 58.7 min
+epoch 3 | step 20,600 | loss 4.6250 (interval mean 4.5929) | lr 4.35e-04 | 12,118 target tok/s | 59.0 min
+epoch 3 | step 20,700 | loss 4.6135 (interval mean 4.5937) | lr 4.34e-04 | 12,236 target tok/s | 59.3 min
+epoch 3 | step 20,800 | loss 4.6410 (interval mean 4.5954) | lr 4.33e-04 | 12,163 target tok/s | 59.6 min
+epoch 3 | step 20,900 | loss 4.6206 (interval mean 4.5962) | lr 4.32e-04 | 12,122 target tok/s | 59.9 min
+epoch 3 | step 21,000 | loss 4.6105 (interval mean 4.5967) | lr 4.31e-04 | 12,076 target tok/s | 60.1 min
+epoch 3 | step 21,100 | loss 4.6240 (interval mean 4.5976) | lr 4.30e-04 | 12,084 target tok/s | 60.4 min
+epoch 3 | step 21,200 | loss 4.6233 (interval mean 4.5983) | lr 4.29e-04 | 11,992 target tok/s | 60.7 min
+epoch 3 | step 21,300 | loss 4.5883 (interval mean 4.5980) | lr 4.28e-04 | 12,091 target tok/s | 61.0 min
+epoch 3 | step 21,400 | loss 4.5952 (interval mean 4.5980) | lr 4.27e-04 | 12,055 target tok/s | 61.3 min
+epoch 3 | step 21,500 | loss 4.6086 (interval mean 4.5983) | lr 4.26e-04 | 12,058 target tok/s | 61.6 min
+epoch 3 | step 21,600 | loss 4.6075 (interval mean 4.5985) | lr 4.25e-04 | 12,040 target tok/s | 61.9 min
+epoch 3 | step 21,700 | loss 4.5690 (interval mean 4.5977) | lr 4.24e-04 | 12,080 target tok/s | 62.2 min
+epoch 3 | step 21,800 | loss 4.6159 (interval mean 4.5982) | lr 4.23e-04 | 12,115 target tok/s | 62.4 min
+epoch 3 | step 21,900 | loss 4.6231 (interval mean 4.5988) | lr 4.22e-04 | 12,002 target tok/s | 62.7 min
+epoch 3 | step 22,000 | loss 4.6056 (interval mean 4.5990) | lr 4.21e-04 | 12,086 target tok/s | 63.0 min
+epoch 3 | step 22,100 | loss 4.5735 (interval mean 4.5984) | lr 4.20e-04 | 12,210 target tok/s | 63.3 min
+epoch 3 | step 22,200 | loss 4.5775 (interval mean 4.5979) | lr 4.19e-04 | 12,072 target tok/s | 63.6 min
+epoch 3 | step 22,300 | loss 4.5881 (interval mean 4.5977) | lr 4.19e-04 | 12,015 target tok/s | 63.9 min
+epoch 3 | step 22,400 | loss 4.5739 (interval mean 4.5971) | lr 4.18e-04 | 12,147 target tok/s | 64.2 min
+epoch 3 | step 22,500 | loss 4.5887 (interval mean 4.5969) | lr 4.17e-04 | 12,179 target tok/s | 64.5 min
+epoch 3 | step 22,600 | loss 4.5771 (interval mean 4.5965) | lr 4.16e-04 | 12,017 target tok/s | 64.7 min
+epoch 3 | step 22,700 | loss 4.5809 (interval mean 4.5962) | lr 4.15e-04 | 11,966 target tok/s | 65.0 min
+epoch 3 | step 22,800 | loss 4.5661 (interval mean 4.5956) | lr 4.14e-04 | 11,924 target tok/s | 65.3 min
+epoch 3 | step 22,900 | loss 4.5580 (interval mean 4.5948) | lr 4.13e-04 | 12,155 target tok/s | 65.6 min
+epoch 3 | step 23,000 | loss 4.5642 (interval mean 4.5942) | lr 4.12e-04 | 12,181 target tok/s | 65.9 min
+epoch 3 | step 23,100 | loss 4.5782 (interval mean 4.5939) | lr 4.11e-04 | 12,024 target tok/s | 66.2 min
+epoch 3 | step 23,200 | loss 4.5961 (interval mean 4.5939) | lr 4.10e-04 | 12,225 target tok/s | 66.5 min
+epoch 3 | step 23,300 | loss 4.6191 (interval mean 4.5944) | lr 4.09e-04 | 12,176 target tok/s | 66.8 min
+epoch 3 | step 23,400 | loss 4.6108 (interval mean 4.5947) | lr 4.09e-04 | 12,120 target tok/s | 67.1 min
+epoch 3 | step 23,500 | loss 4.6040 (interval mean 4.5949) | lr 4.08e-04 | 11,960 target tok/s | 67.3 min
+epoch 3 | step 23,600 | loss 4.6032 (interval mean 4.5950) | lr 4.07e-04 | 12,006 target tok/s | 67.6 min
+epoch 3 | step 23,700 | loss 4.6370 (interval mean 4.5958) | lr 4.06e-04 | 12,274 target tok/s | 67.9 min
+epoch 3 | step 23,800 | loss 4.5982 (interval mean 4.5958) | lr 4.05e-04 | 12,237 target tok/s | 68.2 min
+epoch 3 | step 23,900 | loss 4.6143 (interval mean 4.5961) | lr 4.04e-04 | 12,045 target tok/s | 68.5 min
+epoch 3 | step 24,000 | loss 4.6231 (interval mean 4.5966) | lr 4.03e-04 | 12,141 target tok/s | 68.8 min
+epoch 3 | step 24,100 | loss 4.6041 (interval mean 4.5967) | lr 4.03e-04 | 12,091 target tok/s | 69.1 min
+epoch 3 | step 24,200 | loss 4.5914 (interval mean 4.5966) | lr 4.02e-04 | 12,205 target tok/s | 69.4 min
+epoch 3 | step 24,300 | loss 4.6124 (interval mean 4.5968) | lr 4.01e-04 | 12,023 target tok/s | 69.6 min
+epoch 3 | step 24,400 | loss 4.5948 (interval mean 4.5968) | lr 4.00e-04 | 12,149 target tok/s | 69.9 min
+epoch 3 | step 24,500 | loss 4.6032 (interval mean 4.5969) | lr 3.99e-04 | 12,089 target tok/s | 70.2 min
+epoch 3 | step 24,600 | loss 4.5944 (interval mean 4.5969) | lr 3.98e-04 | 12,224 target tok/s | 70.5 min
+epoch 3 | step 24,700 | loss 4.5909 (interval mean 4.5968) | lr 3.98e-04 | 11,993 target tok/s | 70.8 min
+epoch 3 | step 24,800 | loss 4.5566 (interval mean 4.5962) | lr 3.97e-04 | 12,168 target tok/s | 71.1 min
+epoch 3 | step 24,900 | loss 4.5777 (interval mean 4.5959) | lr 3.96e-04 | 12,055 target tok/s | 71.4 min
+epoch 3 | step 25,000 | loss 4.5561 (interval mean 4.5954) | lr 3.95e-04 | 12,190 target tok/s | 71.7 min
+epoch 3 | step 25,100 | loss 4.5688 (interval mean 4.5950) | lr 3.94e-04 | 12,110 target tok/s | 72.0 min
+epoch 3 | step 25,200 | loss 4.5710 (interval mean 4.5947) | lr 3.94e-04 | 12,093 target tok/s | 72.2 min
+epoch 3 | step 25,300 | loss 4.5618 (interval mean 4.5942) | lr 3.93e-04 | 12,006 target tok/s | 72.5 min
+epoch 3 | step 25,400 | loss 4.5873 (interval mean 4.5941) | lr 3.92e-04 | 11,950 target tok/s | 72.8 min
+epoch 3 | step 25,500 | loss 4.6072 (interval mean 4.5943) | lr 3.91e-04 | 12,011 target tok/s | 73.1 min
+epoch 3 | step 25,600 | loss 4.5785 (interval mean 4.5941) | lr 3.91e-04 | 11,965 target tok/s | 73.4 min
+epoch 3 | step 25,700 | loss 4.5586 (interval mean 4.5936) | lr 3.90e-04 | 11,698 target tok/s | 73.7 min
+epoch 3 | step 25,800 | loss 4.5875 (interval mean 4.5936) | lr 3.89e-04 | 12,091 target tok/s | 74.0 min
+epoch 3 | step 25,900 | loss 4.5641 (interval mean 4.5932) | lr 3.88e-04 | 12,054 target tok/s | 74.3 min
+epoch 3 | step 26,000 | loss 4.5825 (interval mean 4.5931) | lr 3.88e-04 | 12,139 target tok/s | 74.6 min
+epoch 3 | step 26,100 | loss 4.5801 (interval mean 4.5929) | lr 3.87e-04 | 12,023 target tok/s | 74.8 min
+epoch 3 | step 26,200 | loss 4.5688 (interval mean 4.5926) | lr 3.86e-04 | 12,210 target tok/s | 75.1 min
+epoch 3 | step 26,300 | loss 4.5678 (interval mean 4.5923) | lr 3.85e-04 | 12,090 target tok/s | 75.4 min
+epoch 3 | step 26,400 | loss 4.5785 (interval mean 4.5921) | lr 3.85e-04 | 12,073 target tok/s | 75.7 min
+epoch 3 | step 26,500 | loss 4.5519 (interval mean 4.5917) | lr 3.84e-04 | 12,088 target tok/s | 76.0 min
+epoch 3 | step 26,600 | loss 4.5872 (interval mean 4.5916) | lr 3.83e-04 | 12,077 target tok/s | 76.3 min
+epoch 3 | step 26,700 | loss 4.5571 (interval mean 4.5912) | lr 3.82e-04 | 12,100 target tok/s | 76.6 min
+epoch 3 | step 26,800 | loss 4.5744 (interval mean 4.5910) | lr 3.82e-04 | 12,077 target tok/s | 76.9 min
+epoch 3 | step 26,900 | loss 4.5818 (interval mean 4.5909) | lr 3.81e-04 | 12,161 target tok/s | 77.2 min
+[eval] step 26,916 | train 4.5910 | val 4.5924 (ppl 98.7) | no improvement (1/3)
+epoch 4 | step 27,000 | loss 4.5684 (interval mean 4.5684) | lr 3.80e-04 | 12,111 target tok/s | 77.9 min
+epoch 4 | step 27,100 | loss 4.5384 (interval mean 4.5521) | lr 3.80e-04 | 12,105 target tok/s | 78.1 min
+epoch 4 | step 27,200 | loss 4.5488 (interval mean 4.5509) | lr 3.79e-04 | 12,062 target tok/s | 78.4 min
+epoch 4 | step 27,300 | loss 4.5200 (interval mean 4.5429) | lr 3.78e-04 | 11,915 target tok/s | 78.7 min
+epoch 4 | step 27,400 | loss 4.5414 (interval mean 4.5426) | lr 3.78e-04 | 11,977 target tok/s | 79.0 min
+epoch 4 | step 27,500 | loss 4.5983 (interval mean 4.5521) | lr 3.77e-04 | 11,974 target tok/s | 79.3 min
+epoch 4 | step 27,600 | loss 4.5823 (interval mean 4.5565) | lr 3.76e-04 | 12,053 target tok/s | 79.6 min
+epoch 4 | step 27,700 | loss 4.5413 (interval mean 4.5546) | lr 3.76e-04 | 11,928 target tok/s | 79.9 min
+epoch 4 | step 27,800 | loss 4.5380 (interval mean 4.5527) | lr 3.75e-04 | 12,138 target tok/s | 80.2 min
+epoch 4 | step 27,900 | loss 4.5416 (interval mean 4.5516) | lr 3.74e-04 | 11,990 target tok/s | 80.5 min
+Traceback (most recent call last):
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/train.py", line 246, in <module>
+    main()
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/train.py", line 192, in main
+    logits = model(src, dec_in)   # teacher forcing: one parallel pass over the summary
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/model.py", line 247, in forward
+    memory = self.encode(src, src_mask)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/model.py", line 229, in encode
+    x = layer(x, src_mask)
+        ^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/model.py", line 161, in forward
+    attn_out, _ = self.self_attn(x, x, src_mask)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/model.py", line 96, in forward
+    v = self._split_heads(self.w_v(key_value))
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/Desktop/NLP/groupassignment_2/q3_summarization/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,13 @@
+=== 2026-11-02 21:17:58 START prepare_data
+=== 2026-11-02 21:20:06 OK prepare_data
+=== 2026-11-02 21:20:06 START train
+=== 2026-11-02 22:41:03 STAGE 2 (run 1 stopped manually after epoch 3)
+=== 2026-11-02 22:41:03 START evaluate_base
+=== 2026-11-02 22:41:03 START lead3
+=== 2026-11-02 22:41:40 OK lead3
+=== 2026-11-02 22:47:19 OK evaluate_base
+=== 2026-11-02 22:47:19 START qualitative_base
+=== 2026-11-02 22:47:26 OK qualitative_base
+=== 2026-11-02 22:47:26 START attention_base
+=== 2026-11-02 22:48:10 OK attention_base
+=== 2026-11-02 22:48:10 START train_lr05_b64

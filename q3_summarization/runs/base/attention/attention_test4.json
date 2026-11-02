@@ -1,0 +1,10 @@
+{
+  "index": 4,
+  "window": [
+    208,
+    268
+  ],
+  "attention_mass_in_window": 0.14431190490722656,
+  "generated": "new : the student was arrested on suspicion of murder, police say.\nthe student was arrested on suspicion of murder, police say.\nthe student was arrested on suspicion of murder, police say.\nthe student was arrested on suspicion of murder, assaulting a student.",
+  "reference": "Student is no longer on Duke University campus and will face disciplinary review .\nSchool officials identified student during investigation and the person admitted to hanging the noose, Duke says .\nThe noose, made of rope, was discovered on campus about 2 a.m."
+}

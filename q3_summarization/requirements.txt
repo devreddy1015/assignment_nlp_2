@@ -1,0 +1,8 @@
+torch>=2.4
+datasets>=3.0
+transformers>=4.44   # tokenizer only (bert-base-uncased); no model classes are used
+rouge_score>=0.1.2
+nltk>=3.8            # Lead-3 sentence splitting (rouge_score also needs it for stemming)
+numpy
+matplotlib
+tqdm
