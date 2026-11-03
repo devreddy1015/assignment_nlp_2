@@ -1,0 +1,10 @@
+{
+  "index": 3,
+  "window": [
+    3,
+    63
+  ],
+  "attention_mass_in_window": 0.35026878118515015,
+  "generated": "five americans are monitored for three weeks at an omaha, nebraska hospital.\nthey were exposed to ebola in sierra leone in march.\nthe last of 17 patients who were being monitored are expected to be released by thursday.",
+  "reference": "17 Americans were exposed to the Ebola virus while in Sierra Leone in March .\nAnother person was diagnosed with the disease and taken to hospital in Maryland .\nNational Institutes of Health says the patient is in fair condition after weeks of treatment ."
+}

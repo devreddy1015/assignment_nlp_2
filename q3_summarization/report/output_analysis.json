@@ -1,0 +1,266 @@
+{
+  "summaries": {
+    "reference": {
+      "novel_1": 11.896908057111302,
+      "novel_2": 50.02706908434625,
+      "novel_4": 80.03613437798447,
+      "copied_sentences": 3.848163238743148,
+      "copied4_in_lead3": 40.6865976427822,
+      "copied4_rel_pos": 26.83224191245665,
+      "repeated_trigram": 7.180156657963447,
+      "repeated_sentence": 0.02610966057441253,
+      "number_not_in_article": 8.25065274151436,
+      "novel_words": 5.156483899042645,
+      "words": 52.9065274151436,
+      "pct_with_novel_word": 94.6301131418625,
+      "pct_shorter_than_30_words": 5.648389904264578,
+      "pct_longer_than_100_words": 3.0113141862489123,
+      "student_news_template": 4
+    },
+    "lead3": {
+      "novel_1": 0.0,
+      "novel_2": 0.0,
+      "novel_4": 0.0,
+      "copied_sentences": 100.0,
+      "copied4_in_lead3": 100.0,
+      "copied4_rel_pos": 6.895564423612591,
+      "repeated_trigram": 21.679721496953874,
+      "repeated_sentence": 0.2523933855526545,
+      "number_not_in_article": 0.0,
+      "novel_words": 0.0,
+      "words": 78.67528285465622,
+      "pct_with_novel_word": 0.0,
+      "pct_shorter_than_30_words": 0.9747606614447346,
+      "pct_longer_than_100_words": 11.114012184508267,
+      "student_news_template": 0
+    },
+    "base": {
+      "novel_1": 33.29861730137465,
+      "novel_2": 81.33596932635012,
+      "novel_4": 99.4016292617323,
+      "copied_sentences": 0.10896065302070525,
+      "copied4_in_lead3": 27.14952558647071,
+      "copied4_rel_pos": 38.466293385068475,
+      "repeated_trigram": 99.86945169712794,
+      "repeated_sentence": 44.49086161879895,
+      "number_not_in_article": 13.59442993907746,
+      "novel_words": 5.538207136640557,
+      "words": 64.15100087032202,
+      "pct_with_novel_word": 97.51958224543081,
+      "pct_shorter_than_30_words": 1.6100957354221062,
+      "pct_longer_than_100_words": 15.709312445604873,
+      "student_news_template": 2
+    },
+    "lr05_b64": {
+      "novel_1": 1.366997026047354,
+      "novel_2": 15.534983404756384,
+      "novel_4": 39.34181710700372,
+      "copied_sentences": 22.036771105308965,
+      "copied4_in_lead3": 44.69288619491402,
+      "copied4_rel_pos": 20.325060057433024,
+      "repeated_trigram": 64.80417754569191,
+      "repeated_sentence": 11.65361183637946,
+      "number_not_in_article": 0.5657093124456049,
+      "novel_words": 0.44778067885117495,
+      "words": 56.081462140992166,
+      "pct_with_novel_word": 29.208006962576157,
+      "pct_shorter_than_30_words": 1.7841601392515232,
+      "pct_longer_than_100_words": 1.4273281114012184,
+      "student_news_template": 4
+    }
+  },
+  "vs_lead3": {
+    "base": {
+      "rouge1": {
+        "mean_diff": -26.408315097959655,
+        "ci95": [
+          -26.63211744395193,
+          -26.168888986210497
+        ],
+        "pct_articles_better": 1.5839860748476937,
+        "pct_articles_worse": 98.3899042645779
+      },
+      "rouge2": {
+        "mean_diff": -15.858877836885652,
+        "ci95": [
+          -16.075025461049552,
+          -15.644592744417965
+        ],
+        "pct_articles_better": 2.750217580504787,
+        "pct_articles_worse": 95.14360313315927
+      },
+      "rougeL": {
+        "mean_diff": -14.047922313298816,
+        "ci95": [
+          -14.257031161534092,
+          -13.84034235436467
+        ],
+        "pct_articles_better": 6.327241079199304,
+        "pct_articles_worse": 93.62924281984334
+      },
+      "rougeLsum": {
+        "mean_diff": -23.7390973097938,
+        "ci95": [
+          -23.970517690585176,
+          -23.51697418131596
+        ],
+        "pct_articles_better": 1.9843342036553524,
+        "pct_articles_worse": 97.99825935596171
+      }
+    },
+    "lr05_b64": {
+      "rouge1": {
+        "mean_diff": -3.33849844431204,
+        "ci95": [
+          -3.551240276983648,
+          -3.1169257011546514
+        ],
+        "pct_articles_better": 36.997389033942554,
+        "pct_articles_worse": 62.863359442993904
+      },
+      "rouge2": {
+        "mean_diff": -2.157603458120235,
+        "ci95": [
+          -2.35656101081406,
+          -1.959603507464008
+        ],
+        "pct_articles_better": 39.869451697127936,
+        "pct_articles_worse": 59.1644908616188
+      },
+      "rougeL": {
+        "mean_diff": 0.6524020223151744,
+        "ci95": [
+          0.4555218860435089,
+          0.8541963968688582
+        ],
+        "pct_articles_better": 53.57702349869452,
+        "pct_articles_worse": 46.27502175805048
+      },
+      "rougeLsum": {
+        "mean_diff": -2.0288470196492554,
+        "ci95": [
+          -2.2438439750858743,
+          -1.8096196731903214
+        ],
+        "pct_articles_better": 41.81026979982593,
+        "pct_articles_worse": 57.9982593559617
+      }
+    }
+  },
+  "without_repeated_sentences": {
+    "base": {
+      "summaries_changed": 5112,
+      "rouge_f1": {
+        "rouge1": 14.463049057492015,
+        "rouge2": 1.763150094418553,
+        "rougeL": 11.308255174353182,
+        "rougeLsum": 13.468442540134276
+      }
+    },
+    "lr05_b64": {
+      "summaries_changed": 1339,
+      "rouge_f1": {
+        "rouge1": 37.087577770028425,
+        "rouge2": 15.549445639023599,
+        "rougeL": 25.866924352299737,
+        "rougeLsum": 34.71506292919901
+      }
+    }
+  },
+  "attention": {
+    "base": [
+      {
+        "file": "attention_test0",
+        "article_tokens": 512,
+        "entropy": 0.9673029116037778,
+        "peak_x_uniform": 1.5725095050492839,
+        "argmax_is_same_token": 0.06060606060606061,
+        "tokens_in_article": 33,
+        "generated_tokens": 67
+      },
+      {
+        "file": "attention_test1",
+        "article_tokens": 512,
+        "entropy": 0.976801386051567,
+        "peak_x_uniform": 1.6983532469461646,
+        "argmax_is_same_token": 0.0625,
+        "tokens_in_article": 48,
+        "generated_tokens": 74
+      },
+      {
+        "file": "attention_test2",
+        "article_tokens": 512,
+        "entropy": 0.9751613069353252,
+        "peak_x_uniform": 1.44170080918039,
+        "argmax_is_same_token": 0.15789473684210525,
+        "tokens_in_article": 19,
+        "generated_tokens": 43
+      },
+      {
+        "file": "attention_test3",
+        "article_tokens": 241,
+        "entropy": 0.9759609941549029,
+        "peak_x_uniform": 1.431777218853252,
+        "argmax_is_same_token": 0.0,
+        "tokens_in_article": 12,
+        "generated_tokens": 45
+      },
+      {
+        "file": "attention_test4",
+        "article_tokens": 442,
+        "entropy": 0.9664310605354886,
+        "peak_x_uniform": 1.5305625021582046,
+        "argmax_is_same_token": 0.03571428571428571,
+        "tokens_in_article": 28,
+        "generated_tokens": 56
+      }
+    ],
+    "lr05_b64": [
+      {
+        "file": "attention_test0",
+        "article_tokens": 512,
+        "entropy": 0.7240295425051924,
+        "peak_x_uniform": 78.66435124672634,
+        "argmax_is_same_token": 0.5094339622641509,
+        "tokens_in_article": 53,
+        "generated_tokens": 71
+      },
+      {
+        "file": "attention_test1",
+        "article_tokens": 512,
+        "entropy": 0.8055222578283098,
+        "peak_x_uniform": 44.85166222379919,
+        "argmax_is_same_token": 0.38636363636363635,
+        "tokens_in_article": 44,
+        "generated_tokens": 57
+      },
+      {
+        "file": "attention_test2",
+        "article_tokens": 512,
+        "entropy": 0.7544612459970907,
+        "peak_x_uniform": 69.02447722987695,
+        "argmax_is_same_token": 0.775,
+        "tokens_in_article": 40,
+        "generated_tokens": 66
+      },
+      {
+        "file": "attention_test3",
+        "article_tokens": 241,
+        "entropy": 0.7328127581469662,
+        "peak_x_uniform": 44.356999059389956,
+        "argmax_is_same_token": 0.7105263157894737,
+        "tokens_in_article": 38,
+        "generated_tokens": 46
+      },
+      {
+        "file": "attention_test4",
+        "article_tokens": 442,
+        "entropy": 0.7171856073408355,
+        "peak_x_uniform": 81.99912661888327,
+        "argmax_is_same_token": 0.8181818181818182,
+        "tokens_in_article": 33,
+        "generated_tokens": 39
+      }
+    ]
+  }
+}

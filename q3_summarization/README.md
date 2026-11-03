@@ -10,6 +10,14 @@ No `nn.Transformer*`, `nn.MultiheadAttention`, `F.scaled_dot_product_attention`,
 model classes or pre-trained weights are used. The only pre-trained component is the tokenizer,
 which the assignment allows.
 
+**Results** (full test set, F1 x 100, greedy decoding; the report is `report/Q3_report.pdf`):
+
+| System | ROUGE-1 | ROUGE-2 | ROUGE-L | ROUGE-Lsum |
+|---|---|---|---|---|
+| Lead-3 baseline | 40.06 | 17.48 | 25.02 | 36.36 |
+| Run 1: paper's learning rate, batch 32 (stalled, best = epoch 2) | 13.65 | 1.62 | 10.97 | 12.62 |
+| **Run 2, final model: half the learning rate, batch 64 (best = epoch 20)** | **36.72** | **15.32** | **25.67** | **34.33** |
+
 ## Files
 
 | File | What it does |
@@ -25,6 +33,9 @@ which the assignment allows.
 | `sanity_checks.py` | Tests for the masks and the attention, plus a copy task that checks the whole model end to end |
 | `utils.py` | Seeding, device / mixed-precision helpers, checkpoint loading, loss-curve plot |
 | `make_submission.py` | Builds the submission zip without the dataset, the virtual environment or checkpoints |
+| `report/analyze_outputs.py` | Statistics of the generated summaries for the report: copying, repetition, error indicators, per-article comparison with Lead-3, attention sharpness |
+| `report/make_figures.py` | Collects the report figures into `report/figures/` |
+| `report/build_pdf.py` | Converts `report/Q3_report.md` into HTML and PDF |
 
 ## 1. Requirements
 
@@ -46,6 +57,7 @@ Libraries (`requirements.txt`):
 | `rouge_score` >= 0.1.2 | ROUGE-1/2/L/Lsum |
 | `nltk` >= 3.8 | sentence splitting for the Lead-3 baseline |
 | `numpy`, `matplotlib`, `tqdm` | arrays, plots, progress bars |
+| `markdown` | only for `report/build_pdf.py` (the PDF also needs Chrome, Chromium, Brave or Edge) |
 
 ## 2. Setup
 
@@ -103,20 +115,32 @@ Times are for the RTX 4060 Laptop GPU.
 | # | Command | Time | Writes |
 |---|---|---|---|
 | 1 | `python prepare_data.py` | about 2 min, plus the download the first time | `data_cache/` |
-| 2 | `python train.py --run_name base` | about 25 min per epoch on all 287,113 articles; early stopping ends it | `runs/base/` |
-| 3 | `python evaluate.py --run_dir runs/base` | printed when it finishes | `runs/base/eval_test/` |
-| 4 | `python qualitative.py --eval_dir runs/base/eval_test` | seconds | `runs/base/eval_test/qualitative_examples.md` |
-| 5 | `python visualize_attention.py --run_dir runs/base --index 0 --per_head` | seconds | `runs/base/attention/` |
-| 6 | `python lead3_baseline.py` | a few minutes | `outputs/lead3_test.json` |
+| 2 | `python train.py --run_name lr05_b64 --lr_factor 0.5 --accum 2` | about 26 min per epoch on all 287,113 articles; our run used all 20 epochs (8.7 hours) | `runs/lr05_b64/` |
+| 3 | `python evaluate.py --run_dir runs/lr05_b64` | about 6 min | `runs/lr05_b64/eval_test/` |
+| 4 | `python qualitative.py --eval_dir runs/lr05_b64/eval_test` | seconds | `runs/lr05_b64/eval_test/qualitative_examples.md` |
+| 5 | `python visualize_attention.py --run_dir runs/lr05_b64 --index 0 --per_head` | under a minute | `runs/lr05_b64/attention/` |
+| 6 | `python lead3_baseline.py` | under a minute | `outputs/lead3_test.json` |
+| 7 | `python report/analyze_outputs.py --runs base lr05_b64` | about 3 min | `report/output_analysis.json` |
+| 8 | `python report/make_figures.py --runs base lr05_b64` and `python report/build_pdf.py` | seconds | `report/figures/`, `report/Q3_report.pdf` |
+
+Steps 7 and 8 need both runs (`runs/base` from `python train.py --run_name base`, evaluated with
+steps 3-5). The report's Figure 6 shows all generated tokens of test article 2:
+`python visualize_attention.py --run_dir runs/lr05_b64 --index 2 --max_rows 70 --window 70 --per_head`.
+
+**Why the training options in step 2.** These are the settings of our final model (run 2): half
+the paper's learning rate (`--lr_factor 0.5`) and an effective batch of 64 (`--accum 2`). With the
+defaults (`python train.py --run_name base`, the paper's schedule and batch 32), training stalled at
+a validation loss of about 4.5 and the model ignored most of the article. The report explains this in
+Section 4.2. Both runs are in `runs/`.
 
 What each step does:
 
 1. **Prepare data.** Downloads CNN / Daily Mail 3.0.0, lowercases, tokenizes, truncates
    (articles 512 tokens, summaries 128 decoder positions), adds start/end tokens and caches
    everything as `.npy` arrays. Prints length statistics for every split.
-2. **Train.** Teacher-forced training with the paper's learning-rate schedule. Validation loss is
-   computed after every epoch; the best model is saved as `best.pt`, and training stops after 3
-   evaluations without improvement. The loss curves are redrawn after every evaluation.
+2. **Train.** Teacher-forced training with the paper's warm-up learning-rate schedule, multiplied by
+   `--lr_factor`. Validation loss is computed after every epoch; the best model is saved as
+   `best.pt`, and training stops after 3 evaluations without improvement. The loss curves are redrawn after every evaluation.
 3. **Evaluate.** Loads `best.pt` (never the last checkpoint), generates a summary for every test
    article with greedy decoding (no teacher forcing), and scores it with ROUGE.
 4. **Qualitative examples.** Selects random, typical, best, worst and failure examples (repeated
@@ -126,25 +150,30 @@ What each step does:
    clearest one.
 6. **Lead-3 baseline.** The first three sentences of each article, scored the same way. It should
    be close to the assignment's 40.06 / 17.48 / 25.02 / 36.36.
+7. **Output analysis.** Counts copied and novel n-grams, repeated trigrams and sentences, numbers and
+   words that are not in the article, compares every article's ROUGE with Lead-3 (with a bootstrap
+   interval), and measures how sharp the saved attention maps are.
+8. **Report.** Copies the loss curves and heatmaps of both runs into `report/figures/`, draws the
+   length histograms, learning-rate schedules and loss comparison, and builds the PDF.
 
 **Everything in one command:**
 
 ```bash
-python prepare_data.py && python train.py --run_name base && python evaluate.py --run_dir runs/base && python qualitative.py --eval_dir runs/base/eval_test && python visualize_attention.py --run_dir runs/base --index 0 --per_head && python lead3_baseline.py
+python prepare_data.py && python train.py --run_name lr05_b64 --lr_factor 0.5 --accum 2 && python evaluate.py --run_dir runs/lr05_b64 && python qualitative.py --eval_dir runs/lr05_b64/eval_test && python visualize_attention.py --run_dir runs/lr05_b64 --index 0 --per_head && python lead3_baseline.py
 ```
 
 **Long runs.** To keep training running after you close the terminal, and to save the log:
 
 ```bash
-nohup python train.py --run_name base > logs/train.log 2>&1 &
-tail -f logs/train.log        # Ctrl+C stops watching, not training
+nohup python train.py --run_name lr05_b64 --lr_factor 0.5 --accum 2 > logs/train_lr05_b64.log 2>&1 &
+tail -f logs/train_lr05_b64.log      # Ctrl+C stops watching, not training
 ```
 
 **If training stops** (crash, reboot, Ctrl+C), continue from the last validation point with the
 same options plus `--resume`:
 
 ```bash
-python train.py --run_name base --resume
+python train.py --run_name lr05_b64 --lr_factor 0.5 --accum 2 --resume
 ```
 
 The interrupted epoch starts again, reshuffled.
@@ -199,7 +228,7 @@ head).
 ```
 data_cache/                    tokenized dataset (not submitted)
   meta.json                    special-token ids, truncation limits, length statistics
-runs/base/
+runs/lr05_b64/                  final model (run 2); runs/base/ (run 1) has the same layout
   config.json                  all options, model configuration, parameter count, training-set size, GPU
   history.json                 training and validation loss at every evaluation
   loss_curves.png              training and validation loss curves
@@ -222,13 +251,13 @@ Where each output goes in the report:
 | Report item | File |
 |---|---|
 | Tokenizer, truncation limits, share of truncated examples | `data_cache/meta.json` |
-| Model configuration, parameter count, training-set size | `runs/base/config.json` |
-| Training and validation loss curves | `runs/base/loss_curves.png` |
-| Best validation loss, epochs, training time | `runs/base/train_summary.json` |
-| ROUGE-1, ROUGE-2, ROUGE-L, ROUGE-Lsum on the test set | `runs/base/eval_test/rouge.json` |
+| Model configuration, parameter count, training-set size | `runs/lr05_b64/config.json` |
+| Training and validation loss curves | `runs/lr05_b64/loss_curves.png` |
+| Best validation loss, epochs, training time | `runs/lr05_b64/train_summary.json` |
+| ROUGE-1, ROUGE-2, ROUGE-L, ROUGE-Lsum on the test set | `runs/lr05_b64/eval_test/rouge.json` |
 | Lead-3 comparison | `outputs/lead3_test.json` |
-| Qualitative examples and failure cases | `runs/base/eval_test/qualitative_examples.md` |
-| Attention visualization | `runs/base/attention/*.png` |
+| Qualitative examples and failure cases | `runs/lr05_b64/eval_test/qualitative_examples.md` |
+| Attention visualization | `runs/lr05_b64/attention/*.png` |
 
 ## 7. Design choices
 
@@ -252,9 +281,10 @@ Where each output goes in the report:
   post-norm `LayerNorm(x + Dropout(Sublayer(x)))`, embeddings scaled by sqrt(d_model). The
   embeddings and the output projection are tied. **15,186,688 trainable parameters.**
 - **Training:** cross-entropy with `ignore_index=pad`, Adam (beta 0.9 / 0.98, eps 1e-9), the
-  paper's schedule `lr = d_model^-0.5 * min(step^-0.5, step * 4000^-1.5)`, batch size 32,
-  gradient clipping 1.0, bf16 mixed precision, early stopping on validation loss (patience 3).
-  The best checkpoint is restored for testing.
+  paper's schedule `lr = factor * d_model^-0.5 * min(step^-0.5, step * 4000^-1.5)`, gradient
+  clipping 1.0, bf16 mixed precision, early stopping on validation loss (patience 3). The best
+  checkpoint is restored for testing. Run 1 (`runs/base`): factor 1.0, batch 32; it stalled. Run 2
+  (`runs/lr05_b64`, the final model): factor 0.5, batch 64 (32 x 2 accumulation steps).
 - **Decoding:** greedy, at most 128 tokens, no teacher forcing. Each article is encoded once and
   the encoder output is reused at every step.
 - **ROUGE:** `rouge_score` with `use_stemmer=True`, F1 against the original highlights text, on all
@@ -280,11 +310,11 @@ assignment's table gives 641 / 1,304 / 2,967 / 62.5% / 49, so the preprocessing 
 |---|---|
 | `Connection reset` or other download errors | Run the command again. Setting `HF_TOKEN` gives higher Hugging Face rate limits. |
 | `FileNotFoundError: data_cache/meta.json` | Run `python prepare_data.py` first. |
-| `FileNotFoundError: runs/base/best.pt` | Training has not finished its first validation yet. |
+| `FileNotFoundError: runs/<run_name>/best.pt` | Training has not finished its first validation yet. |
 | CUDA out of memory in training | `--batch_size 16 --accum 2` (same effective batch size). |
-| CUDA out of memory in evaluation | `python evaluate.py --run_dir runs/base --batch_size 32` |
+| CUDA out of memory in evaluation | `python evaluate.py --run_dir runs/lr05_b64 --batch_size 32` |
 | No GPU, or a GPU without bf16 | It falls back to fp32 automatically. On a CPU, use a small `--train_size`. |
-| Training was interrupted | `python train.py --run_name base --resume` |
+| Training was interrupted | Run the same `train.py` command again with `--resume` added |
 | Lead-3 differs slightly from 40.06 / 17.48 / 25.02 / 36.36 | Small differences can come from the NLTK sentence-splitter version. |
 
 ## 9. Reproducibility
@@ -295,7 +325,7 @@ initialisation. GPU kernels are not fully deterministic, so two runs can still d
 
 ## 10. Submission
 
-Put the final report in a `report/` folder inside `q3_summarization/`, then run:
+The report is in `report/` (`Q3_report.md`, `Q3_report.pdf`, `figures/`). To build the zip, run:
 
 ```bash
 python make_submission.py        # writes ../q3_submission.zip

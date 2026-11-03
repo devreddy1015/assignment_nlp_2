@@ -1,0 +1,8 @@
+{
+  "best_val_loss": 2.323549561251488,
+  "best_val_ppl": 10.211857664831367,
+  "steps": 89720,
+  "epochs_completed": 20,
+  "early_stopped": false,
+  "train_minutes": 522.3548219045003
+}

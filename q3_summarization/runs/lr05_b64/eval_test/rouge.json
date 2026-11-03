@@ -1,0 +1,36 @@
+{
+  "checkpoint_step": 89720,
+  "rouge": {
+    "rouge1": {
+      "precision": 36.58601214756557,
+      "recall": 39.27470191030879,
+      "f1": 36.718928721390355
+    },
+    "rouge2": {
+      "precision": 15.285941049597094,
+      "recall": 16.40271041791534,
+      "f1": 15.321724278885016
+    },
+    "rougeL": {
+      "precision": 25.519453444108475,
+      "recall": 27.543929830589214,
+      "f1": 25.67247365205243
+    },
+    "rougeLsum": {
+      "precision": 34.21795054962836,
+      "recall": 36.69752981458833,
+      "f1": 34.32669978679132
+    }
+  },
+  "stats": {
+    "examples": 11490,
+    "decoding": "greedy, max 128 tokens",
+    "generation_minutes": 5.4,
+    "avg_words_generated": 58.67188859878155,
+    "avg_words_reference": 55.00931244560488,
+    "avg_sentences_generated": 3.78964316797215,
+    "pct_hit_max_len_without_end_token": 0.008703220191470844,
+    "pct_with_repeated_trigram": 64.38642297650131,
+    "pct_empty": 0.0
+  }
+}

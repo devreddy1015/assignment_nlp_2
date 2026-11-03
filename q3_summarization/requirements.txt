@@ -6,3 +6,4 @@ nltk>=3.8            # Lead-3 sentence splitting (rouge_score also needs it for 
 numpy
 matplotlib
 tqdm
+markdown             # only for report/build_pdf.py
